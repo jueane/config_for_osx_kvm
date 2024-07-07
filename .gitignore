@@ -1,0 +1,4 @@
+OSX-KVM*
+*.img
+*.qcow2
+*.dmg
