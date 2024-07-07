@@ -1,0 +1,29 @@
+安装问题
+
+
+启动闪退：
+用脚本启动。
+
+
+鼠标不能移动，要开启这2行：
+
+  -device usb-kbd,bus=ehci.0
+  -device usb-mouse,bus=ehci.0
+
+
+
+无网络的问题：
+默认命令不是桥接模式，
+替换netdev那一行为：
+  -netdev bridge,id=net0,br=br0
+  -device virtio-net-pci,netdev=net0,id=net0,mac=52:54:00:c9:18:27  
+
+
+
+
+
+开始安装之后。
+之后大概半小时，大概会重启好几次。直到选择语言。
+
+
+
