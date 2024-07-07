@@ -12,6 +12,8 @@ echo "macos 13 starting"
 
 bsnap /jdata/vdisk/macos13
 
+echo "Macos started"
+
 ./OpenCore-Boot.sh "$@"
 
 
