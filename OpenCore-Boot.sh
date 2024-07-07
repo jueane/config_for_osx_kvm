@@ -28,8 +28,8 @@ CPU_SOCKETS="1"
 CPU_CORES="2"
 CPU_THREADS="4"
 
-REPO_PATH="/jdata/vdisk/macos13"
-OVMF_DIR="/jdata/vdisk/macos13/OSX-KVM"
+REPO_PATH="."
+OVMF_DIR="./OSX-KVM"
 
 # shellcheck disable=SC2054
 args=(
@@ -66,7 +66,7 @@ args=(
   # -monitor stdio
   -monitor unix:/tmp/qemu-monitor-socket,server,nowait
   -device vmware-svga 
-  -spice port=5909,addr=0.0.0.0,disable-ticketing=on 
+  -spice port=5930,addr=0.0.0.0,disable-ticketing=on
   -device qxl
 )
 
