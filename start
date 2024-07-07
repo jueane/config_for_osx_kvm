@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "macos 13 starting"
+
+bsnap /jdata/vdisk/macos13
+
+OpenCore-Boot.sh "$@"
+
+
